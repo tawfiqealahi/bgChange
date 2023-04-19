@@ -1,20 +1,20 @@
-// step 1
+//step 1
+
 window.onload = () => {
   main();
 };
 
 function main() {
-    const root = document.getElementById('root')
-    const btn = document.getElementById('change-btn');
-    btn.addEventListener('click', function(){
-        const bgColor =generateColor();
-        root.style.backgroundColor =bgColor;
-    })
+  const root = document.getElementById("root");
+  const btn = document.getElementById("change-btn");
 
+  btn.addEventListener("click", function () {
+    const bgColor = generateColor();
+    root.style.backgroundColor = bgColor;
+  });
 }
 
-//step 2
-
+//step2
 function generateColor() {
   const red = Math.floor(Math.random() * 255);
   const green = Math.floor(Math.random() * 255);
@@ -22,4 +22,3 @@ function generateColor() {
 
   return `rgb(${red}, ${green}, ${blue})`;
 }
-
